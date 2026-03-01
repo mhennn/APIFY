@@ -43,7 +43,7 @@ def request_key_value(self, params=None):
 ### Design Flow
 ```mermaid
 graph LR
-    A[Load csv data<br/>sample_dataset/data.csv] --> B[Run: uvicorn apiFy:app --reload]
+    A[Load your csv data on <br/>sample_dataset/data.csv] --> B[Run: uvicorn apiFy:app --reload]
     B --> C(Initialize Class<br/>RequestParam)
 ```
 
