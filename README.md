@@ -33,18 +33,23 @@ uvicorn apiFy:app --reload
 
 ### Getting of Data
 ```bash
-def get_simple_data(self):
-    self.all_data = self.data.simple_data()
-    return self.all_data
+def request_simple_data(self):
+    return self.reqs_data.simple_data()
+
+def request_key_value(self, params=None):
+    return self.reqs_data.key_value(params)
+```
+
+### Design Flow
+```mermaid
+graph LR
+    A[Load csv data<br/>sample_dataset/data.csv] --> B[Run: uvicorn apiFy:app --reload]
+    B --> C(Initialize Module<br/>Request Parameters)
 ```
 
 ### Ideal Usage
 The program is design for simple dataset with no nested dict, but can be expanded.
 
-```mermaid
-graph LR
-    A[Load csv data to <br/>sample_dataset/data.csv] --> B(Initiate the Module)
-```
 ### Testing the API
 ```bash
 from request_module.request_params import RequestParam
