@@ -44,7 +44,7 @@ def request_key_value(self, params=None):
 ```mermaid
 graph LR
     A[Load csv data<br/>sample_dataset/data.csv] --> B[Run: uvicorn apiFy:app --reload]
-    B --> C(Initialize Module<br/>Request Parameters)
+    B --> C(Initialize Class<br/>RequestParam)
 ```
 
 ### Ideal Usage
