@@ -1,14 +1,14 @@
-# APIFY 🚀
+# APIFY-Go 🚀
 
-Apify allows you to deploy custom Python scripts built with FastAPI, instantly turning your specific JSON datasets into live APIs. This approach provides a flexible, serverless backend that accelerates prototyping by letting you define complex data structures and endpoints directly in code.
+APIFY-Go allows you to deploy custom Python scripts built with FastAPI, instantly turning your specific JSON datasets into live APIs. This approach provides a flexible, serverless backend that accelerates prototyping by letting you define complex data structures and endpoints directly in code.
 
 ---
 
-### AGIFY features
+### APIFY-Go features
 1. High-Performance Asynchronous Framework: Built for speed, handles requests efficiently, making it ideal for serving data quickly in a cloud environment.
 2. You can easily integrate Apify's Dataset storage to save and retrieve your JSON dictionaries across different API requests.
 3. Handles API requests quickly and efficiently.
-4. Apify runs everything for you; you just focus on your code.
+4. Apify-go runs everything for you; you just focus on your code.
 5. Automatically creates a web page to test your API.
 
 ### Usage
