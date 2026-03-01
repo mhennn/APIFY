@@ -12,26 +12,11 @@ APIFY-Go allows you to deploy custom Python scripts built with FastAPI, instantl
 - 💻 Automatically creates a web page to test your API.
 - 💻 Can be used as backend API for Flask
 
-### Usage
-```bash
-git clone https://github.com/mhennn/APIFY-Go
-```
-
 ### Data Structural Application
-1. Change your dataset
-```bash
-utils/data.py
-```
-2. Run the program
-```bash
-python apiFy.py
-```
-
-### Design Flow
 ```mermaid
 graph LR
-    A[Load your csv data on <br/>sample_dataset/data.csv] --> B[Run the Program <br/> apiFy.py]
-    B --> C(Initialize Class:<br/>RequestParam on your 'Main.py')
+    A[git clone https://github.com/mhennn/APIFY-Go] --> B[Load your csv data on <br/>dataset/data.csv] --> C[Run the Program <br/> apiFy.py]
+    C --> D(Initialize Class:<br/>RequestParam on your 'Main.py')
 ```
 
 ##### RequestParams has two(2) methods:

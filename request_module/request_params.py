@@ -1,7 +1,7 @@
 from request_module.request_Data import RequestData
 
 class RequestParam:
-    def __init__(self, path="sample_dataset/data.csv"):
+    def __init__(self, path="dataset/data.csv"):
         self.reqs_data = RequestData(path)
 
     def request_simple_data(self):
