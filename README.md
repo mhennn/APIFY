@@ -45,10 +45,21 @@ The program is design for simple dataset with no nested dict, but can be expande
 ```bash
 from request_module.request_params import RequestParam
 
-def test():
-    reqs = RequestParam("sample_dataset/data.csv")
+def test_all():
+    reqs = RequestParam("./sample_dataset/data.csv")
     data = reqs.request_key_value("Name")
-    print(data)
+    return data
 
-test()
+def test_key():
+    reqs = RequestParam("./sample_dataset/data.csv")
+    data = reqs.request_key_value("Email")
+    return data
+
+print(test_key())
+print(test_all())
+```
+##### Output Test
+```bash
+{'detail': 'Email not found'}
+['Johnson', 'Smith', 'Davis', 'Evans']
 ```
