@@ -41,6 +41,10 @@ def get_simple_data(self):
 ### Ideal Usage
 The program is design for simple dataset with no nested dict, but can be expanded.
 
+```mermaid
+graph LR
+    A[Load csv data to <br/>sample_dataset/data.csv] --> B(Initiate the Module)
+```
 ### Testing the API
 ```bash
 from request_module.request_params import RequestParam
