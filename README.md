@@ -13,7 +13,7 @@ APIFY-Go allows you to deploy custom Python scripts built with FastAPI, instantl
 
 ### Usage
 ```bash
-git clone https://github.com/mhennn/APIFY
+git clone https://github.com/mhennn/APIFY-Go
 ```
 
 ### API Documentation
