@@ -1,14 +1,23 @@
 from fastapi import FastAPI
-from core.get_data import GetData
+from request_module.request_params import RequestParam
 
 app = FastAPI(debug=True)
-getData = GetData()
-key_param = "username" # Change the "username" as the parameter
+reqParams = RequestParam()
+
+@app.get('/')
+def home():
+    return {
+        "Message": "Welcome to APIFY",
+        "Available Route": [
+            "/simpleData",
+            "/keyValue"
+            ]
+        }
 
 @app.get('/simpleData')
 def simple_data():
-    return getData.get_simple_data()
+    return reqParams.request_simple_data()
 
 @app.get('/keyValue/')
-def key_value(key:str = key_param):
-    return getData.define_key(key)
+def key_value():
+    return reqParams.request_key_value()

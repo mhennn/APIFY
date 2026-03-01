@@ -16,6 +16,11 @@ Apify allows you to deploy custom Python scripts built with FastAPI, instantly t
 git clone https://github.com/mhennn/APIFY
 ```
 
+### API Documentation
+```bash
+https://documenter.getpostman.com/view/51479109/2sBXcHieYq
+```
+
 ### Data Structural Application
 1. Change your dataset
 ```bash
