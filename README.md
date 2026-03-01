@@ -47,7 +47,7 @@ from request_module.request_params import RequestParam
 
 def test_all():
     reqs = RequestParam("./sample_dataset/data.csv")
-    data = reqs.request_key_value("Name")
+    data = reqs.request_simple_data()
     return data
 
 def test_key():
@@ -61,5 +61,6 @@ print(test_all())
 ##### Output Test
 ```bash
 ['Developer', 'Strategist', 'Analyst', 'Designer']
-['Johnson', 'Smith', 'Davis', 'Evans']
+
+[{'Employee': 1001, 'ID': 'Alice', 'Name': 'Johnson', 'Department': 'Engineering', 'Project': 'Lead', 'Role': 'Developer', 'Hours': 40, 'Worked': None}, {'Employee': 1002, 'ID': 'Bob', 'Name': 'Smith', 'Department': 'Marketing', 'Project': 'Content', 'Role': 'Strategist', 'Hours': 25, 'Worked': None}, {'Employee': 1003, 'ID': 'Charlie', 'Name': 'Davis', 'Department': 'Engineering', 'Project': 'QA', 'Role': 'Analyst', 'Hours': 35, 'Worked': None}, {'Employee': 1004, 'ID': 'Diana', 'Name': 'Evans', 'Department': 'Design', 'Project': 'UI', 'Role': 'Designer', 'Hours': 30, 'Worked': None}]
 ```

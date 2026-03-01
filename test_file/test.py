@@ -7,7 +7,7 @@ from request_module.request_params import RequestParam
 
 def test_all():
     reqs = RequestParam("./sample_dataset/data.csv")
-    data = reqs.request_key_value("Name")
+    data = reqs.request_simple_data()
     return data
 
 def test_key():
