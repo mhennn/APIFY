@@ -1,13 +1,22 @@
-from utils.data import Data
+import pandas as pd
+import json
 
 class GetData:
-    def __init__(self):
-        self.data = Data()
+    def __init__(self, path):
+        self.df = pd.read_csv(path, sep='\\s+')
+        self.json_data = self.df.to_json(orient="records", indent=4)
 
     def get_simple_data(self):
-        all_data = self.data.simple_data()
-        return all_data
+        return json.loads(self.json_data)
     
     def define_key(self, key_value):
-        key_data = self.get_simple_data()[key_value]
-        return key_data
+        if isinstance(self.json_data, str):
+            object_data = json.loads(self.json_data)
+        else:
+            object_data = self.json_data
+
+        retrieve_value = []
+        for data in object_data:
+            retrieve_value.append(data[key_value])
+
+        return retrieve_value

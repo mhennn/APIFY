@@ -1,8 +1,8 @@
 from core.get_data import GetData
 
 class RequestData:
-    def __init__(self):
-        self.getData = GetData()
+    def __init__(self, path):
+        self.getData = GetData(path)
 
     def simple_data(self):
         return self.getData.get_simple_data()

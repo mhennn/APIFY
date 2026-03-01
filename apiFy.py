@@ -4,6 +4,10 @@ from request_module.request_params import RequestParam
 app = FastAPI(debug=True)
 reqParams = RequestParam()
 
+def path():
+    data_path = "sample_dataset/data.csv"
+    return data_path
+
 @app.get('/')
 def home():
     return {
